@@ -1,5 +1,7 @@
 <template>
-    <canvas class="wall" id="myCanvas" width="1280" height="637"> </canvas>
+    <div>
+        <canvas class="wall" id="myCanvas" width="1280" height="637"> </canvas>
+    </div>
 </template>
 
 

@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <div style="height:5em"></div>
-    <img alt="frog" src="./../assets/swapmpUp2019.png" class="responsive"/>    <div style="height:2em"></div>
+    <div style="height:7em"></div>
+    <img alt="frog" src="./../assets/swampuplogo-1.png" class="responsive"/>    <div style="height:2em"></div>
     <h1>{{ hellomsg }}</h1>
   </div>
 </template>
@@ -28,6 +28,7 @@ export default {
 
 h1, h2 {
   font-weight: normal;
+  color: white;
 }
 
 ul {

@@ -3,7 +3,7 @@
     <div style="height:5em"></div>
     <b-btn variant="success" @click="callRestService(); showResponse=true" id="btnCallHello">/frogs(GET)</b-btn>
     <p></p>
-    <h4>Backend response: <b-alert :show="showResponse" dismissible @dismissed="showResponse=false">{{ response }}</b-alert></h4>
+    <h2>Backend response: <b-alert :show="showResponse" dismissible @dismissed="showResponse=false">{{ response }}</b-alert></h2>
 
     <b-btn v-b-toggle.collapse1>Show Response details</b-btn>
     <p></p>
@@ -92,8 +92,9 @@ p {
   margin-bottom: 20px;
 }
 
-h1, h2 {
+h1, h2 ,h4{
   font-weight: normal;
+  color: white;
 }
 
 ul {

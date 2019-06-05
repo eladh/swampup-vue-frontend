@@ -1,36 +1,24 @@
 <template>
   <div id="app">
-
     <div>
       <b-navbar toggleable="lg" type="dark" variant="info">
         <b-navbar-brand href="#/">SwampUp 2019</b-navbar-brand>
-
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/">Hello Frogs</router-link> </b-nav-item>
-            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/bootstrap">Get Frogs</router-link> </b-nav-item>
-            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/user">Add Frog</router-link> </b-nav-item>
-            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/service">Frog Facts</router-link> </b-nav-item>
-            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/app">Get App</router-link> </b-nav-item>
-            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/universe">Frog Universe</router-link> </b-nav-item>
+            <b-nav-item href="#"><router-link to="/">Hello Frogs</router-link> </b-nav-item>
+            <b-nav-item href="#"><router-link to="/bootstrap">Get Frogs</router-link> </b-nav-item>
+            <b-nav-item href="#"><router-link to="/user">Add Frog</router-link> </b-nav-item>
+            <b-nav-item href="#"><router-link to="/service">Frog Facts</router-link> </b-nav-item>
+            <b-nav-item href="#"><router-link to="/app">Get App</router-link> </b-nav-item>
+            <b-nav-item href="#"><router-link to="/universe">Frog Universe</router-link> </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
     </div>
-    <router-view :hellomsg="msg"></router-view>
+    <router-view class="main" :hellomsg="msg"></router-view>
   </div>
 </template>
-
-
-<!--<div id="nav">-->
-  <!--<img src="./assets/frog-face.png"><router-link to="/">Hello Frogs</router-link> |-->
-  <!--<img src="./assets/frog-face.png"> <router-link to="/bootstrap">Get Frogs</router-link> |-->
-  <!--<img src="./assets/frog-face.png">  <router-link to="/user">Add Frog</router-link> |-->
-  <!--<img src="./assets/frog-face.png">  <router-link to="/service">Frog Facts</router-link>-->
-<!--</div>-->
-
 <script>
 
     export default {
@@ -44,6 +32,18 @@
 </script>
 
 <style lang="scss">
+
+
+  .main {
+    width: 100%;
+    height: 90vh;
+    background: url(https://swampup.jfrog.com/wp-content/uploads/sites/4/2019/04/Frame-1.jpg) 100% 50%;
+    background-size: cover;
+  }
+
+  .router-link-active {
+    font-weight: bold;
+  }
 
   .navbar-brand {
     display: inline-block;

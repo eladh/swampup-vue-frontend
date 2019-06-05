@@ -1,6 +1,6 @@
 <template>
   <div class="user">
-    <div style="height:5em"></div>
+    <div style="height:8em"></div>
 
     <h1>Create New Frog</h1>
     <div style="height:1em"></div>
@@ -12,7 +12,7 @@
 
     <div style="height:2em"></div>
 
-    <div v-if="showResponse"><h6>User created with Id: {{ response }}</h6></div>
+    <div v-if="showResponse"><h3>User created with Id: {{ response }}</h3></div>
 
     <button v-if="showResponse" @click="retrieveUser()">Retrieve user {{user.id}} data from database</button>
 
@@ -85,8 +85,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
+  h1, h2, h3 {
     font-weight: normal;
+    color: white;
   }
 
   ul {

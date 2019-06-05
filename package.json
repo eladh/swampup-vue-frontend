@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "A Vue.js & Spring Boot example project",
   "author": "Elad Hirsch <eladh@jfrog.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "clean": "rm -rf node_modules target",
     "serve": "vue-cli-service serve",

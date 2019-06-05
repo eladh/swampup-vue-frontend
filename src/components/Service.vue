@@ -52,6 +52,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+  .card {
+    margin: 50px;
+  }
+
   .center-screen {
     display: flex;
     flex-direction: column;

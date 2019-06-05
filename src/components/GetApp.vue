@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div style="height:5em"></div>
+    <div style="height:7em"></div>
     <img alt="frog" src="./../assets/qr-code.png" class="responsive"/>    <div style="height:2em"></div>
     <h1>Get Application</h1>
   </div>
@@ -20,6 +20,8 @@
 
 h1, h2 {
   font-weight: normal;
+  color: white;
+
 }
 
 ul {
