@@ -1,14 +1,15 @@
 <template>
   <div class="user">
-    <div style="height:4em"></div>
+    <div style="height:5em"></div>
 
     <h1>Create New Frog</h1>
     <div style="height:1em"></div>
 
     <input type="text" v-model="user.firstName" placeholder="first name">
     <input type="text" v-model="user.lastName" placeholder="last name">
+    <br><br>
+    <b-button variant="success" @click="createUser()">Create Frog</b-button>
 
-    <button @click="createUser()">Create Frog</button>
     <div style="height:2em"></div>
 
     <div v-if="showResponse"><h6>User created with Id: {{ response }}</h6></div>

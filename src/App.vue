@@ -3,7 +3,7 @@
 
     <div>
       <b-navbar toggleable="lg" type="dark" variant="info">
-        <b-navbar-brand href="#">SwampUp 2019</b-navbar-brand>
+        <b-navbar-brand href="#/">SwampUp 2019</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -14,11 +14,11 @@
             <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/user">Add Frog</router-link> </b-nav-item>
             <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/service">Frog Facts</router-link> </b-nav-item>
             <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/app">Get App</router-link> </b-nav-item>
+            <b-nav-item href="#"><img src="./assets/frog-face.png"><router-link to="/universe">Frog Universe</router-link> </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
     </div>
-    <div style="height:3em"></div>
     <router-view :hellomsg="msg"></router-view>
   </div>
 </template>

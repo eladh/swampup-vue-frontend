@@ -5,6 +5,7 @@ import Service from '@/components/Service'
 import Bootstrap from '@/components/Bootstrap'
 import User from '@/components/User'
 import GetApp from '@/components/GetApp'
+import Universe from '@/components/Universe'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
             path: '/app',
             name: 'App',
             component: GetApp
+        },
+        {
+            path: '/universe',
+            name: 'Universe',
+            component: Universe
         }
     ]
 })

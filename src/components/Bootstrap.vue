@@ -1,6 +1,6 @@
 <template>
   <div class="bootstrap">
-    <div style="height:2em"></div>
+    <div style="height:5em"></div>
     <b-btn variant="success" @click="callRestService(); showResponse=true" id="btnCallHello">/frogs(GET)</b-btn>
     <p></p>
     <h4>Backend response: <b-alert :show="showResponse" dismissible @dismissed="showResponse=false">{{ response }}</b-alert></h4>

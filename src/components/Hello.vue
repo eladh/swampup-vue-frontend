@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div style="height:3em"></div>
+    <div style="height:5em"></div>
     <img alt="frog" src="./../assets/swapmpUp2019.png" class="responsive"/>    <div style="height:2em"></div>
     <h1>{{ hellomsg }}</h1>
   </div>

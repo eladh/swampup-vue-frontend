@@ -1,6 +1,6 @@
 <template>
   <div class="service">
-    <div style="height:2em"></div>
+    <div style="height:5em"></div>
     <v-wait for="jfrog-search">
       <template slot="waiting">
         <div class="center-screen">
