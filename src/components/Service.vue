@@ -3,12 +3,12 @@
     <div style="height:2em"></div>
     <v-wait for="jfrog-search">
       <template slot="waiting">
-        <div>
-          <img src="../assets/giphy.gif" />
+        <div class="center-screen">
+          <img src="../assets/b5096ea9-9879-4841-9589-06385ad99ba9.svg" />
         </div>
       </template>
       <div style="height:1em"></div>
-      <button @click="callRestService()">CALL Frog Service</button>
+      <b-btn variant="success" @click="callRestService(); showResponse=true" id="btnCallHello">CALL Frog Service</b-btn>
       <div style="height:2em"></div>
       <h1> {{ response }}</h1>
     </v-wait>
@@ -51,6 +51,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+  .center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+  }
+
   h1, h2 {
     font-weight: normal;
   }

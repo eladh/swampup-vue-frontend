@@ -1,27 +1,19 @@
 <template>
   <div class="hello">
     <div style="height:3em"></div>
-    <img alt="frog" src="./../assets/swapmpUp2019.png" class="responsive"/>    <div style="height:2em"></div>
-    <h1>{{ hellomsg }}</h1>
+    <img alt="frog" src="./../assets/qr-code.png" class="responsive"/>    <div style="height:2em"></div>
+    <h1>Get Application</h1>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'hello',
-  props: { hellomsg: { type: String, required: true } }
-}
-
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   @media screen and (max-width:1024px){
-    img.responsive {width: 300px;}
+    img.responsive {width: 200px;}
   }
 
   @media screen and (min-width:1025px){
-    img.responsive{width: 600px;}
+    img.responsive{width: 300px;}
   }
 
   img.responsive{height: auto;}
