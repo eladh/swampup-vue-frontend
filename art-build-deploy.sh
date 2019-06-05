@@ -2,7 +2,7 @@
 
 
 usage() {
-    echo "Deploy a maven-based build to Artifactory using Artifactory maven plugin"
+    echo "Deploy a vue-based build to Artifactory using npm"
     echo "Usage: $1 artifactory address"
     exit 1
 }
