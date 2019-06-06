@@ -55,7 +55,14 @@
                     TagCanvas.SetSpeed('myCanvas', [0.05 ,0.05]);
                     setTimeout(() => {
                         TagCanvas.SetSpeed('myCanvas', [0 ,0]);
-                        this.$toasted.show('Winner is - Elad Hirsch' , { icon : 'check'});
+                        const someFrog = frogs[Math.floor(Math.random() * frogs.length)];
+
+                        this.$toasted.show(someFrog.name, {
+                            theme: "toasted-primary",
+                            icon: "check",
+                            position: "top-center",
+                            duration : 5000
+                        });
                     } ,5000);
                 }, 5000);
             },
@@ -75,8 +82,8 @@
 
     #button {
         position:absolute;
-        left:10%;
-        top:50%
+        left:0%;
+        top:10%
     }
 
     #myCanvas {

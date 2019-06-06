@@ -37,7 +37,7 @@
   .main {
     width: 100%;
     height: 90vh;
-    background: url(https://swampup.jfrog.com/wp-content/uploads/sites/4/2019/04/Frame-1.jpg) 100% 50%;
+    background: url("../src/assets/san-frame-1.jpg") 100% 50%;
     background-size: cover;
   }
 
