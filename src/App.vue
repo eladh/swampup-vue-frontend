@@ -11,7 +11,6 @@
             <b-nav-item href="#"><router-link to="/user">Add Frog</router-link> </b-nav-item>
             <b-nav-item href="#"><router-link to="/service">Frog Facts</router-link> </b-nav-item>
             <b-nav-item href="#"><router-link to="/app">Get App</router-link> </b-nav-item>
-            <b-nav-item href="#"><router-link to="/universe">Frog Universe</router-link> </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>

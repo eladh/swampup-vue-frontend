@@ -4,7 +4,7 @@
     <v-wait for="jfrog-search">
       <template slot="waiting">
         <div class="center-screen">
-          <img src="../assets/b5096ea9-9879-4841-9589-06385ad99ba9.svg" />
+          <img src="../assets/loader.svg" />
         </div>
       </template>
       <div style="height:1em"></div>

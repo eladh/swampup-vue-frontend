@@ -44,21 +44,25 @@
         },
         methods: {
             // Fetches posts when the component is created.
-            createUser () {
-                var params = new URLSearchParams()
-                params.append('firstName', this.user.firstName)
-                params.append('lastName', this.user.lastName)
+            createUser ()  {
+                const params = new URLSearchParams()
+
+                if (this.user.firstName === "" || this.user.lastName === "") {
+                    return;
+                }
+
+                params.append('firstName', this.user.firstName);
+                params.append('lastName', this.user.lastName);
 
                 AXIOS.post(`/user`, params)
                     .then(response => {
                         // JSON responses are automatically parsed.
-                        this.response = response.data
-                        this.user.id = response.data
-                        console.log(response.data)
-                        this.showResponse = true
+                        this.response = response.data;
+                        this.user.id = response.data;
+                        this.showResponse = true;
 
-                        this.user.firstName = ""
-                        this.user.lastName = ""
+                        this.user.firstName = "";
+                        this.user.lastName = "";
 
                     })
                     .catch(e => {
